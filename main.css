@@ -298,7 +298,7 @@ input[type=text], select, textarea {
     resize: vertical;
   }
   
-  input[type=submit] {
+  button[type=submit] {
     background-color:#9057d0;
     color: white;
     padding: 12px 20px;
