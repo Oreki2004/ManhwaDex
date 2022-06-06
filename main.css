@@ -296,8 +296,7 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
-  
+}
   button[type=submit] {
     background-color:#9057d0;
     color: white;
@@ -307,7 +306,7 @@ input[type=text], select, textarea {
     cursor: pointer;
   }
   
-  input[type=submit]:hover {
+  button[type=submit]:hover {
     background-color: #873adf;
   }
 
