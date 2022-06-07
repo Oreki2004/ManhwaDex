@@ -105,7 +105,6 @@ li a{
     color: #6A6A6A;
     text-decoration: none;
     font-weight: 600;
-    font-family:Arial, Helvetica, sans-serif;
     padding:5px 0;
     font-family: 'Poppins', sans-serif;
     
@@ -151,6 +150,7 @@ nav li a::before{
     font-family: 'Comic Neue', cursive;
 }
 
+
 .genres-ul{
     width: fit-content;
     list-style-type: none;
@@ -173,6 +173,84 @@ nav li a::before{
     max-width: 1240px;
     display: flex;
 }
+.manga-img{
+    padding: 20px;
+    background-color:#363636;
+    margin: 20px;
+}
+.manga-desc{
+    padding: 20px;
+    margin: 20px;
+    background-color:#363636;
+    border-radius: 20px;
+}
+
+.manga-container p,.manga-container a{
+    font-size: 1.2rem;
+    font-family: 'Comic Neue';
+}
+.manga-container a:hover{
+    color:#EB3349;
+}
+
+.manga-container table{
+    text-align: left;
+}
+
+.manga-container #fchap-button{
+    text-align: center;
+}
+
+.manga-container button {
+    background-color:#9057d0;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'comic neue';
+    font-size: 1rem;
+}
+
+.manga-container a:hover{
+    color: white;
+}
+
+.manga-container button:hover{
+    background-color:#873adf;
+}
+
+
+#title-desc{
+    text-align: right;
+}
+
+.chapter-container{
+    justify-content: center;
+    padding: 40px 0px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+.chapter-container img{
+ display: block;
+ height:auto;
+ overflow: hidden;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.chapters {
+    margin-left: 20rem;
+}
+
+.chapters li{
+    list-style-type: none;
+}
+
 
 
 .subtitle h1, .subtitle2 h1{
@@ -191,6 +269,48 @@ nav li a::before{
     display: block;
     justify-content: left;
 }
+
+.button a {
+    background-color:#9057d0;
+    margin-right: 10rem;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'comic neue';
+    font-size: 1rem;
+    float: right;
+
+}
+
+.button a:hover{
+    color: white;
+    background-color:#873adf;
+}
+.dropdown {
+    position: relative;
+    background-color:#6A6A6A;
+    padding: 10px;
+    border-radius: 5px;
+    float: right;
+    margin-right: 20px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#363636;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
 .subtitle2{
     display: flex;
     justify-content: right;
@@ -296,16 +416,9 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-}
-button{
-    background-color:#9057d0;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-  button[type=submit] {
+  }
+  
+  input[type=submit] {
     background-color:#9057d0;
     color: white;
     padding: 12px 20px;
@@ -314,7 +427,7 @@ button{
     cursor: pointer;
   }
   
-  button[type=submit]:hover {
+  input[type=submit]:hover {
     background-color: #873adf;
   }
 

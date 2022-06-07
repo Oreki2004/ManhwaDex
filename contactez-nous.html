@@ -16,10 +16,10 @@
 
 <header class="main-head">
     <nav>
-        <a  href="accueil.html"><img class="logo"align="left"  src="logo.jpg"></a>
-        <a href="accueil.html"><h1>ManhwaDex</h1></a>
+        <a  href="index.html"><img class="logo"align="left"  src="logo.jpg"></a>
+        <a href="index.html"><h1>ManhwaDex</h1></a>
         <ul>
-            <li><a href="accueil.html">ACCUEIL</a></li>
+            <li><a href="index.html">ACCUEIL</a></li>
             <li><a href="manga.html">MANGA</a></li>
             <li><a href="contactez-nous.html">CONTACTEZ-NOUS</a></li>
             <li><a href="aide.html">AIDE</a></li>
@@ -36,7 +36,6 @@
             <li><a href="fantaisie.html">FANTAISIE</a></li>
             <li><a href="tranchedevie.html">TRANCHE DE VIE</a></li>
             <li><a href="aventure.html">AVENTURE</a></li>
-            <li><a href="surnaturel.html">SURNATUREL</a></li>
         </ul>
     </div>
 </header>
@@ -55,12 +54,13 @@
     
     <div class="form-container">
         <form action="https://formsubmit.co/f0a64951cc84a92330ce4100b53fa5f7" method="POST" >
-            
+
             <input type="text" name="_honey" style="display:none">
-            
+            <input type="hidden" name="_captcha" value="false">
+
             <label for="name">Nom</label>
             <input type="text" name="nom" placeholder="Nom.." required>
-            
+
             <label for="pname">Prénom</label>
             <input type="text" name="prénom" placeholder="Prénom.." required>
         
@@ -68,11 +68,12 @@
             <input type="text"  name="email" placeholder="Email.." required>
         
             <label for="subject">Sujet</label>
-            <textarea name="subject" placeholder="Écrivez quelque chose.." style="height:200px" required></textarea>
+            <textarea name="_subject" placeholder="Écrivez quelque chose.." style="height:200px" required></textarea>
 
-            <button type="submit" name="submit" >Envoyer</button>
+            
+            <button type="submit" name="submit">Envoyer</button>
 
-            <input type="hidden" name="_next" value="https://oreki2004.github.io/ManhwaDex/thanks.html">
+            <input type="hidden" name="_next" value="/thanks.html">
 
           </form>
         </div>
@@ -110,7 +111,7 @@
 <footer class="main-foot">
     <nav>
         <ul>
-            <li><a href="accueil.html">ACCUEIL</a></li>
+            <li><a href="index.html">ACCUEIL</a></li>
             <li>|</li>
             <li><a href="apropos.html">À PROPOS DE NOUS</a></li>
             <li>|</li>
